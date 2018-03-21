@@ -290,15 +290,7 @@ t['processed']=0
 
 myrestore(myfrom,topath,mybuffer)
 
-# if archive=='yes':
-    # for i in t[t['processed']==1].index:
-        # thisthing=r'{}\{}'.format(topath,i)
-        # mycmd='"{}\\7z" a "{}.7z" "{}" -mx9 -ms'.format(exe,drop(thisthing,'\\'),thisthing)
-        # p(mycmd)
-        # subprocess.run(wraper(shlex.split(mycmd)))
-        # os.remove(thisthing)
-        # if isempty(drop(thisthing,'\\')):
-            # os.rmdir(drop(thisthing,'\\'))
+
 
 if archive=='yes':
     for i in set(t[t['processed']==1]['path']):
